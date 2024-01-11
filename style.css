@@ -11,6 +11,7 @@
 body{
     width: 100%;
     height: 100vh;
+    flex-direction: column;
 }
 
 main{
@@ -26,13 +27,14 @@ main{
     border-radius: 10px;
     box-shadow: var(--shadow);
     padding: 0.625rem;
+    transition: all 0.5s;
 }
 
 #show-val{
     font-size: 10rem;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    content: 2;
+    transition: all 0.5s;
 }
 
 .center{
@@ -51,4 +53,38 @@ main{
     color: #ffffff;
     background-color: blue;
     border: none;
+}
+
+#help{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+#help-info{
+    border: 1px solid rgb(185, 184, 184);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgb(186, 185, 185);
+}
+
+.hidden{
+    display: none;
+}
+
+#help-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    background-color: blue;
+    color: #ffffff;
+    cursor: pointer;
 }
